@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1983Media Content Calendar Q4 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #0066cc;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #0052a3;
+        }
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+        .month-section {
+            margin-bottom: 40px;
+        }
+        .month-title {
+            background: #0066cc;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        th {
+            background: #f0f0f0;
+            padding: 15px;
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 2px solid #0066cc;
+            font-size: 13px;
+            color: #333;
+        }
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 13px;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover {
+            background: #f9f9f9;
+        }
+        .pillar-case {
+            background: #e3f2fd;
+            color: #1a5490;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .pillar-bts {
+            background: #f3e5f5;
+            color: #6a1b9a;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .pillar-thought {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .pillar-edu {
+            background: #fff3e0;
+            color: #e65100;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .pillar-news {
+            background: #fce4ec;
+            color: #880e4f;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .pillar-community {
+            background: #ede7f6;
+            color: #4527a0;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .platform-linkedin {
+            background: #0077b5;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: 700;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        .platform-instagram {
+            background: #e4405f;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: 700;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        .platform-youtube {
+            background: #ff0000;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: 700;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        .platform-twitter {
+            background: #1da1f2;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: 700;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        .platform-facebook {
+            background: #1877f2;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: 700;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        .legend {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .legend h3 {
+            margin-bottom: 15px;
+            color: #0066cc;
+        }
+        .legend-section {
+            margin-bottom: 15px;
+        }
+        .legend-section h4 {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .legend-item {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 8px;
+        }
+        .legend-item span {
+            font-size: 12px;
+            vertical-align: middle;
+        }
+        .summary-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0066cc;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .summary-box h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .summary-stat {
+            background: #f5f7fa;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .summary-stat strong {
+            display: block;
+            font-size: 24px;
+            color: #0066cc;
+            margin-bottom: 5px;
+        }
+        .summary-stat span {
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>1983MEDIA 3-MONTH CONTENT CALENDAR</h1>
+            <p>Q4 2025 Pilot Strategy | October - December 2025</p>
+        </div>
+
+        <div class="summary-box">
+            <h3>📊 Q4 2025 Pilot Overview</h3>
+            <div class="summary-grid">
+                <div class="summary-stat">
+                    <strong>168</strong>
+                    <span>Total Posts (12-week plan)</span>
+                </div>
+                <div class="summary-stat">
+                    <strong>40-50</strong>
+                    <span>Posts per week (avg)</span>
+                </div>
+                <div class="summary-stat">
+                    <strong>$1,800-2,400</strong>
+                    <span>Paid ad budget (3 months)</span>
+                </div>
+                <div class="summary-stat">
+                    <strong>6</strong>
+                    <span>Content pillars</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- OCTOBER 2025 -->
+        <div class="month-section">
+            <div class="month-title">OCTOBER 2025: Foundation & Launch</div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Week</th>
+                        <th style="width: 15%;">Date Range</th>
+                        <th style="width: 15%;">Content Pillar</th>
+                        <th style="width: 25%;">Content Idea / Theme</th>
+                        <th style="width: 20%;">Platforms & Format</th>
+                        <th style="width: 15%;">CTA / Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1</strong></td>
+                        <td>Oct 1-6</td>
+                        <td><span class="pillar-bts">Behind-the-Scenes</span></td>
+                        <td>"Welcome to 1983 Media" - office reveal Reel, team intro carousel</td>
+                        <td><span class="platform-instagram">Reel</span><span class="platform-instagram">Carousel</span></td>
+                        <td>Follow us for agency updates</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1</strong></td>
+                        <td>Oct 1-6</td>
+                        <td><span class="pillar-thought">Thought Leadership</span></td>
+                        <td>LinkedIn article: "5 African Branding Trends Reshaping 2025"</td>
+                        <td><span class="platform-linkedin">Long-form</span></td>
+                        <td>Drive engagement, position authority</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1</strong></td>
+                        <td>Oct 1-6</td>
+                        <td><span class="pillar-edu">Educational</span></td>
+                        <td>Instagram Story series: "Design Fundamentals 101" (5 slides/day)</td>
+                        <td><span class="platform-instagram">Stories</span></td>
+                        <td>Build engagement, establish expertise</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2</strong></td>
+                        <td>Oct 7-13</td>
+                        <td><span class="pillar-case">Case Studies</span></td>
+                        <td>Case Study #1: "From Startup to Success" (carousel + LinkedIn post)</td>
+                        <td><span class="platform-instagram">Carousel</span><span class="platform-linkedin">Post</span></td>
+                        <td>Download case study PDF (lead gen)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2</strong></td>
+                        <td>Oct 7-13</td>
+                        <td><span class="pillar-bts">Behind-the-Scenes</span></td>
+                        <td>Reel: "Creative Process Walkthrough" (brainstorm to final design)</td>
+                        <td><span class="platform-instagram">Reel</span></td>
+                        <td>Humanize agency, show expertise</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2</strong></td>
+                        <td>Oct 7-13</td>
+                        <td><span class="pillar-news">News & Trends</span></td>
+                        <td>Twitter/X thread: "What Instagram's Algorithm Update Means for Brands"</td>
+                        <td><span class="platform-twitter">Thread</span></td>
+                        <td>Real-time engagement, thought leadership</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3</strong></td>
+                        <td>Oct 14-20</td>
+                        <td><span class="pillar-case">Case Studies</span></td>
+                        <td>YouTube video: "Client Success Story - 250% Brand Awareness Growth" (8 min)</td>
+                        <td><span class="platform-youtube">Video</span></td>
+                        <td>Drive YouTube subscribers, link in bio</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3</strong></td>
+                        <td>Oct 14-20</td>
+                        <td><span class="pillar-thought">Thought Leadership</span></td>
+                        <td>LinkedIn carousel: "Top 10 Brand Strategy Mistakes (And How to Fix Them)"</td>
+                        <td><span class="platform-linkedin">Carousel</span></td>
+                        <td>Establish expertise, drive engagement</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3</strong></td>
+                        <td>Oct 14-20</td>
+                        <td><span class="pillar-community">Community</span></td>
+                        <td>Instagram poll: "What's your biggest branding challenge?" (Polls in Stories)</td>
+                        <td><span class="platform-instagram">Stories</span></td>
+                        <td>Gather audience insights, boost engagement</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4</strong></td>
+                        <td>Oct 21-27</td>
+                        <td><span class="pillar-edu">Educational</span></td>
+                        <td>Instagram Reel: "Design Trends Q4 2025" (trending audio, quick tips)</td>
+                        <td><span class="platform-instagram">Reel</span></td>
+                        <td>Leverage trending audio, ride algorithm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4</strong></td>
+                        <td>Oct 21-27</td>
+                        <td><span class="pillar-bts">Behind-the-Scenes</span></td>
+                        <td>Team member spotlight: "Meet Our Lead Designer" (interview format, Reel + blog)</td>
+                        <td><span class="platform-instagram">Reel</span><span class="platform-linkedin">Post</span></td>
+                        <td>Humanize team, attract talent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4</strong></td>
+                        <td>Oct 21-27</td>
+                        <td><span class="pillar-news">News & Trends</span></td>
+                        <td>LinkedIn post: "South African Digital Advertising Regulation Update 2025"</td>
+                        <td><span class="platform-linkedin">Post</span></td>
+                        <td>Position as industry expert, timely</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 15px; font-size: 12px; color: #666;"><strong>October Focus:</strong> Foundation-building, audience growth through education and thought leadership. Begin paid ads pilot ($600 budget). Aim for 300-400 new followers by end of October.</p>
+        </div>
+
+        <!-- NOVEMBER 2025 -->
+        <div class="month-section">
+            <div class="month-title">NOVEMBER 2025: Momentum & Community Building</div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Week</th>
+                        <th style="width: 15%;">Date Range</th>
+                        <th style="width: 15%;">Content Pillar</th>
+                        <th style="width: 25%;">Content Idea / Theme</th>
+                        <th style="width: 20%;">Platforms & Format</th>
+                        <th style="width: 15%;">CTA / Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>5</strong></td>
+                        <td>Nov 4-10</td>
+                        <td><span class="pillar-thought">Thought Leadership</span></td>
+                        <td>LinkedIn Newsletter #1: "November Branding Briefing - African Trends"</td>
+                        <td><span class="platform-linkedin">Newsletter</span></td>
+                        <td>Build subscriber list, establish authority</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5</strong></td>
+                        <td>Nov 4-10</td>
+                        <td><span class="pillar-case">Case Studies</span></td>
+                        <td>"Wins Wednesday" case study carousel series launches (weekly)</td>
+                        <td><span class="platform-instagram">Carousel</span><span class="platform-linkedin">Post</span></td>
+                        <td>Recurring content, establish cadence</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5</strong></td>
+                        <td>Nov 4-10</td>
+                        <td><span class="pillar-edu">Educational</span></td>
+                        <td>Instagram Reel: "How to Brief a Designer" (common client pain point)</td>
+                        <td><span class="platform-instagram">Reel</span></td>
+                        <td>Help audience, position as helpful expert</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6</strong></td>
+                        <td>Nov 11-17</td>
+                        <td><span class="pillar-community">Community</span></td>
+                        <td>LinkedIn/Instagram Q&A: "Ask Us Anything About Branding" (Stories/LinkedIn Live prep)</td>
+                        <td><span class="platform-linkedin">Post</span><span class="platform-instagram">Stories</span></td>
+                        <td>Build engagement, gather feedback</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6</strong></td>
+                        <td>Nov 11-17</td>
+                        <td><span class="pillar-bts">Behind-the-Scenes</span></td>
+                        <td>Office event Reel: "1983 Media Team Lunch & Culture Moments"</td>
+                        <td><span class="platform-instagram">Reel</span></td>
+                        <td>Humanize brand, show company culture</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6</strong></td>
+                        <td>Nov 11-17</td>
+                        <td><span class="pillar-thought">Thought Leadership</span></td>
+                        <td>YouTube video: "2025 African Marketing Trends Webinar" (40 min, live on YouTube Live)</td>
+                        <td><span class="platform-youtube">Live Stream</span></td>
+                        <td>Drive YouTube subscribers, position authority</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7</strong></td>
+                        <td>Nov 18-24</td>
+                        <td><span class="pillar-case">Case Studies</span></td>
+                        <td>Case Study #2: "Rebranding Success - Measurable Impact" (carousel + video)</td>
+                        <td><span class="platform-instagram">Carousel</span><span class="platform-linkedin">Post</span></td>
+                        <td>Lead gen (case study PDF download)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7</strong></td>
+                        <td>Nov 18-24</td>
+                        <td><span class="pillar-news">News & Trends</span></td>
+                        <td>Twitter/X: "Top 5 Marketing Moments from Black Friday/Cyber Monday"</td>
+                        <td><span class="platform-twitter">Thread</span></td>
+                        <td>Real-time trend commentary, engagement</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7</strong></td>
+                        <td>Nov 18-24</td>
+                        <td><span class="pillar-edu">Educational</span></td>
+                        <td>Instagram carousel: "10-Step Brand Strategy Checklist for Startups"</td>
+                        <td><span class="platform-instagram">Carousel</span></td>
+                        <td>Lead magnet, drive website traffic</td>
+                    </tr>
+                    <tr>
+                        <td><strong>8</strong></td>
+                        <td>Nov 25-Dec 1</td>
+                        <td><span class="pillar-community">Community</span></td>
+                        <td>Agency partner spotlight: "Meet [Partner Agency]" (cross-promotion series)</td>
+                        <td><span class="platform-linkedin">Post</span><span class="platform-instagram">Post</span></td>
+                        <td>Build partnerships, expand reach</td>
+                    </tr>
+                    <tr>
+                        <td><strong>8</strong></td>
+                        <td>Nov 25-Dec 1</td>
+                        <td><span class="pillar-bts">Behind-the-Scenes</span></td>
+                        <td>"A Day in the Life at 1983 Media" - short Reels series (3-4 parts)</td>
+                        <td><span class="platform-instagram">Reels</span></td>
+                        <td>Humanize brand, attract talent</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 15px; font-size: 12px; color: #666;"><strong>November Focus:</strong> Scale content production, launch recurring series (Wins Wednesday, Newsletter, Q&A). First YouTube Live webinar. Increase paid ads to $800/month. Target: 500+ new followers, 10-15 qualified leads.</p>
+        </div>
+
+        <!-- DECEMBER 2025 -->
+        <div class="month-section">
+            <div class="month-title">DECEMBER 2025: Optimization & Year-End</div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Week</th>
+                        <th style="width: 15%;">Date Range</th>
+                        <th style="width: 15%;">Content Pillar</th>
+                        <th style="width: 25%;">Content Idea / Theme</th>
+                        <th style="width: 20%;">Platforms & Format</th>
+                        <th style="width: 15%;">CTA / Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>9</strong></td>
+                        <td>Dec 2-8</td>
+                        <td><span class="pillar-thought">Thought Leadership</span></td>
+                        <td>LinkedIn article: "Lessons from 2025: Top Branding Wins & Learnings"</td>
+                        <td><span class="platform-linkedin">Long-form</span></td>
+                        <td>Reflect on year, position authority</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9</strong></td>
+                        <td>Dec 2-8</td>
+                        <td><span class="pillar-case">Case Studies</span></td>
+                        <td>Case Study #3: "Year-End Success Story - ROI Breakdown" (YouTube + carousel)</td>
+                        <td><span class="platform-youtube">Video</span><span class="platform-instagram">Carousel</span></td>
+                        <td>Demonstrate results, drive lead gen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9</strong></td>
+                        <td>Dec 2-8</td>
+                        <td><span class="pillar-community">Community</span></td>
+                        <td>Instagram poll: "What branding topic should we cover in 2026?"</td>
+                        <td><span class="platform-instagram">Stories</span></td>
+                        <td>Audience feedback, plan 2026 content</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10</strong></td>
+                        <td>Dec 9-15</td>
+                        <td><span class="pillar-bts">Behind-the-Scenes</span></td>
+                        <td>Holiday office party & team celebration Reel</td>
+                        <td><span class="platform-instagram">Reel</span></td>
+                        <td>Celebrate team, show company culture</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10</strong></td>
+                        <td>Dec 9-15</td>
+                        <td><span class="pillar-edu">Educational</span></td>
+                        <td>Instagram carousel: "Year-End Branding Checklist for 2026 Planning"</td>
+                        <td><span class="platform-instagram">Carousel</span></td>
+                        <td>Help audience prepare for 2026</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10</strong></td>
+                        <td>Dec 9-15</td>
+                        <td><span class="pillar-thought">Thought Leadership</span></td>
+                        <td>LinkedIn Newsletter #3: "Year in Review: 2025 African Marketing Trends"</td>
+                        <td><span class="platform-linkedin">Newsletter</span></td>
+                        <td>Build subscriber base, year-end reflection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>11</strong></td>
+                        <td>Dec 16-22</td>
+                        <td><span class="pillar-community">Community</span></td>
+                        <td>Holiday campaign: "2026 New Year Resolution: Your Brand Refresh"</td>
+                        <td><span class="platform-instagram">Reels</span><span class="platform-linkedin">Post</span></td>
+                        <td>Lead gen for 2026 projects, timely messaging</td>
+                    </tr>
+                    <tr>
+                        <td><strong>11</strong></td>
+                        <td>Dec 16-22</td>
+                        <td><span class="pillar-bts">Behind-the-Scenes</span></td>
+                        <td>Client appreciation testimonial video series (3-4 short clips)</td>
+                        <td><span class="platform-instagram">Reels</span><span class="platform-youtube">Shorts</span></td>
+                        <td>Social proof, thank clients, build trust</td>
+                    </tr>
+                    <tr>
+                        <td><strong>11</strong></td>
+                        <td>Dec 16-22</td>
+                        <td><span class="pillar-news">News & Trends</span></td>
+                        <td>Year-end media review: "Biggest Brand Moments of 2025"</td>
+                        <td><span class="platform-twitter">Thread</span></td>
+                        <td>Real-time engagement, trend analysis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12</strong></td>
+                        <td>Dec 23-31</td>
+                        <td><span class="pillar-thought">Thought Leadership</span></td>
+                        <td>"2026 Predictions: African Marketing Trends & Opportunities" (article + LinkedIn post)</td>
+                        <td><span class="platform-linkedin">Long-form</span></td>
+                        <td>Position authority, drive Q1 engagement</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12</strong></td>
+                        <td>Dec 23-31</td>
+                        <td><span class="pillar-bts">Behind-the-Scenes</span></td>
+                        <td>"Thank You 2025" team reflection video</td>
+                        <td><span class="platform-youtube">Video</span></td>
+                        <td>Year-end reflection, team celebration</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12</strong></td>
+                        <td>Dec 23-31</td>
+                        <td><span class="pillar-case">Case Studies</span></td>
+                        <td>"Year in Review: Our Top 5 Client Success Stories" (recap carousel)</td>
+                        <td><span class="platform-instagram">Carousel</span></td>
+                        <td>Celebrate wins, lead gen for 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 15px; font-size: 12px; color: #666;"><strong>December Focus:</strong> Year-end reflection, celebrate wins, plan for 2026. Continue paid ads ($800/month). Q4 strategy review & reporting. Target: 400-500 new followers, 10-15 qualified leads, 40+ total referrals for Q1 2026 follow-up.</p>
+        </div>
+
+        <!-- LEGEND -->
+        <div class="legend">
+            <h3>📋 Content Calendar Legend & Key</h3>
+            
+            <div class="legend-section">
+                <h4>Content Pillars</h4>
+                <div class="legend-item">
+                    <span class="pillar-case">Case Studies</span>
+                    <span>Client success stories, ROI, transformations (25%)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="pillar-bts">Behind-the-Scenes</span>
+                    <span>Team, culture, process, office moments (20%)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="pillar-thought">Thought Leadership</span>
+                    <span>Industry insights, trends, expert commentary (25%)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="pillar-edu">Educational</span>
+                    <span>How-tos, tips, guides, fundamentals (15%)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="pillar-news">News & Trends</span>
+                    <span>Real-time commentary, industry news (10%)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="pillar-community">Community</span>
+                    <span>Engagement, polls, Q&A, UGC (5%)</span>
+                </div>
+            </div>
+
+            <div class="legend-section">
+                <h4>Platform Tags</h4>
+                <div class="legend-item">
+                    <span class="platform-linkedin">LinkedIn</span>
+                    <span>B2B, thought leadership, long-form</span>
+                </div>
+                <div class="legend-item">
+                    <span class="platform-instagram">Instagram</span>
+                    <span>Visual, Reels, Stories, carousels</span>
+                </div>
+                <div class="legend-item">
+                    <span class="platform-youtube">YouTube</span>
+                    <span>Long-form video, webinars, case studies</span>
+                </div>
+                <div class="legend-item">
+                    <span class="platform-twitter">Twitter/X</span>
+                    <span>Real-time, threads, news commentary</span>
+                </div>
+                <div class="legend-item">
+                    <span class="platform-facebook">Facebook</span>
+                    <span>Community groups, engagement</span>
+                </div>
+            </div>
+
+            <div class="legend-section">
+                <h4>Weekly Content Cadence (40-50 posts/week)</h4>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li><strong>LinkedIn:</strong> 4-5 posts/week (long-form articles, carousels, video, text posts)</li>
+                    <li><strong>Instagram:</strong> 10-12 posts/week (5-6 feed, 4-6 Reels, daily Stories)</li>
+                    <li><strong>YouTube:</strong> 2-3 videos/month + weekly Shorts</li>
+                    <li><strong>Twitter/X:</strong> 5-7 posts/week (original tweets, threads, replies)</li>
+                    <li><strong>Facebook:</strong> 3-4 posts/week (company page + community group)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ADDITIONAL NOTES -->
+        <div class="summary-box" style="margin-top: 30px;">
+            <h3>💡 Implementation Notes</h3>
+            <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8; font-size: 14px;">
+                <li><strong>Recurring Series:</strong> "Wins Wednesday" case study carousel (weekly), LinkedIn Newsletter (monthly), Team Spotlight (bi-weekly)</li>
+                <li><strong>Paid Ads Strategy:</strong> Allocate $600 (Oct), $800 (Nov), $800 (Dec) for LinkedIn lead gen ads and Instagram carousel/video ads</li>
+                <li><strong>Community Engagement:</strong> Respond to all comments within 24 hours; 30 min/day engagement on industry posts</li>
+                <li><strong>Hashtag Strategy:</strong> Use #SouthAfricanBrandStrategy, #AfricanCreativeExcellence, #MadeInJburg, #1983MediaCase consistently</li>
+                <li><strong>Repurposing:</strong> Turn LinkedIn articles into 5-part Instagram carousels; convert YouTube videos into 8-10 Instagram Reels</li>
+                <li><strong>Tracking:</strong> UTM parameters on all links; Google Analytics 4 + native platform analytics; weekly performance reviews</li>
+                <li><strong>Flexibility:</strong> Reserve 10-15% of calendar for real-time news, trends, or client opportunities</li>
+                <li><strong>Resource Needs:</strong> Social media manager (1 FTE), content creator (0.5 FTE), video producer (0.5 FTE) minimum</li>
+            </ul>
+        </div>
+
+        <!-- MONTHLY THEMES -->
+        <div class="summary-box" style="margin-top: 30px;">
+            <h3>🎯 Monthly Themes & Campaign Focus</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 15px;">
+                <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; border-left: 4px solid #0066cc;">
+                    <h4 style="color: #0066cc; margin-bottom: 10px;">OCTOBER: Foundation</h4>
+                    <p style="font-size: 13px; line-height: 1.6;">Launch social presence, optimize profiles, begin content calendar. Focus: education + thought leadership. First case study series. Paid ads pilot launch.</p>
+                    <p style="margin-top: 10px; font-weight: 600; font-size: 12px;">Key Campaigns: Welcome series, Design fundamentals, African trends article</p>
+                </div>
+                <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #6a1b9a;">
+                    <h4 style="color: #6a1b9a; margin-bottom: 10px;">NOVEMBER: Momentum</h4>
+                    <p style="font-size: 13px; line-height: 1.6;">Scale content production, launch recurring series (Wins Wednesday, Newsletter). First YouTube Live webinar. Build partnerships and collaborations.</p>
+                    <p style="margin-top: 10px; font-weight: 600; font-size: 12px;">Key Campaigns: Monthly webinar, Q&A sessions, Agency partner spotlights</p>
+                </div>
+                <div style="background: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #2e7d32;">
+                    <h4 style="color: #2e7d32; margin-bottom: 10px;">DECEMBER: Optimization</h4>
+                    <p style="font-size: 13px; line-height: 1.6;">Year-end reflection, celebrate wins, optimize strategy. Analyze Q4 data. Plan 2026 content themes. Holiday campaigns and client appreciation.</p>
+                    <p style="margin-top: 10px; font-weight: 600; font-size: 12px;">Key Campaigns: Year in review, 2026 predictions, Client testimonials</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- METRICS DASHBOARD -->
+        <div class="summary-box" style="margin-top: 30px;">
+            <h3>📈 Q4 2025 Target Metrics</h3>
+            <table style="margin-top: 15px;">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Baseline (Oct 1)</th>
+                        <th>Oct Target</th>
+                        <th>Nov Target</th>
+                        <th>Dec Target</th>
+                        <th>Total Q4 Growth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>LinkedIn Followers</strong></td>
+                        <td>800</td>
+                        <td>1,100</td>
+                        <td>1,500</td>
+                        <td>2,000</td>
+                        <td>+150% (1,200 new)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Instagram Followers</strong></td>
+                        <td>500</td>
+                        <td>800</td>
+                        <td>1,100</td>
+                        <td>1,500</td>
+                        <td>+200% (1,000 new)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>YouTube Subscribers</strong></td>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>350</td>
+                        <td>500</td>
+                        <td>+400% (400 new)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monthly Website Referrals</strong></td>
+                        <td>20</td>
+                        <td>60</td>
+                        <td>100</td>
+                        <td>150</td>
+                        <td>+650% (130 new)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Consultation Inquiries</strong></td>
+                        <td>2/mo</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>+400% (21 total Q4)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Engagement Rate (Avg)</strong></td>
+                        <td>1-2%</td>
+                        <td>3-4%</td>
+                        <td>4-5%</td>
+                        <td>4-6%</td>
+                        <td>+200-300%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Content Posts</strong></td>
+                        <td>0-5/week</td>
+                        <td>168 total</td>
+                        <td>(40-50/week)</td>
+                        <td>across Q4</td>
+                        <td>~550 posts Q4</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paid Ad Spend</strong></td>
+                        <td>$0</td>
+                        <td>$600</td>
+                        <td>$800</td>
+                        <td>$800</td>
+                        <td>$2,200 total</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CONTENT PRODUCTION CHECKLIST -->
+        <div class="summary-box" style="margin-top: 30px;">
+            <h3>✅ Content Production Workflow</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 15px;">
+                <div>
+                    <h4 style="font-size: 14px; color: #0066cc; margin-bottom: 10px;">Week 1: Planning</h4>
+                    <ul style="margin-left: 20px; font-size: 13px; line-height: 1.8;">
+                        <li>Strategy meeting & theme selection</li>
+                        <li>Review previous month's analytics</li>
+                        <li>Content calendar planning (4-5 weeks)</li>
+                        <li>Assign content to team members</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-size: 14px; color: #0066cc; margin-bottom: 10px;">Week 2: Creation</h4>
+                    <ul style="margin-left: 20px; font-size: 13px; line-height: 1.8;">
+                        <li>Copywriting & caption drafts</li>
+                        <li>Graphic design & visual creation</li>
+                        <li>Video shooting & editing</li>
+                        <li>First round of content review</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-size: 14px; color: #0066cc; margin-bottom: 10px;">Week 3: Scheduling</h4>
+                    <ul style="margin-left: 20px; font-size: 13px; line-height: 1.8;">
+                        <li>Final approval & sign-off</li>
+                        <li>Load content into scheduler</li>
+                        <li>Add hashtags, UTMs, CTAs</li>
+                        <li>QA check all posts</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-size: 14px; color: #0066cc; margin-bottom: 10px;">Ongoing: Engagement</h4>
+                    <ul style="margin-left: 20px; font-size: 13px; line-height: 1.8;">
+                        <li>Daily community management (30 min)</li>
+                        <li>Respond to comments within 24 hours</li>
+                        <li>Monitor mentions & DMs</li>
+                        <li>Weekly analytics review</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TOOLS & RESOURCES -->
+        <div class="summary-box" style="margin-top: 30px; margin-bottom: 40px;">
+            <h3>🛠️ Recommended Tools & Budget</h3>
+            <table style="margin-top: 15px;">
+                <thead>
+                    <tr>
+                        <th>Tool Category</th>
+                        <th>Recommended Tool</th>
+                        <th>Purpose</th>
+                        <th>Monthly Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Scheduling</strong></td>
+                        <td>Later or Buffer</td>
+                        <td>Schedule posts across platforms</td>
+                        <td>$25-75</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Design</strong></td>
+                        <td>Canva Pro</td>
+                        <td>Templates, graphics, social media design</td>
+                        <td>$13</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Video Editing</strong></td>
+                        <td>CapCut + Adobe Premiere</td>
+                        <td>Reels, YouTube videos, editing</td>
+                        <td>$5-85</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Analytics</strong></td>
+                        <td>Sprout Social or Native Analytics</td>
+                        <td>Reporting, performance tracking</td>
+                        <td>$0-249</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CRM</strong></td>
+                        <td>HubSpot (free tier)</td>
+                        <td>Lead tracking, consultation booking</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Webinars</strong></td>
+                        <td>Zoom</td>
+                        <td>Live webinars, recordings</td>
+                        <td>$16</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Music</strong></td>
+                        <td>Epidemic Sound</td>
+                        <td>Royalty-free music for videos</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr style="background: #f0f0f0; font-weight: 700;">
+                        <td colspan="3"><strong>TOTAL MONTHLY TOOLS BUDGET</strong></td>
+                        <td><strong>$200-400</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="background: #0066cc; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 40px;">
+            <p style="font-size: 14px; margin-bottom: 10px;">📅 This calendar represents a strategic framework. Adapt based on performance data, audience feedback, and business priorities.</p>
+            <p style="font-size: 12px; opacity: 0.9;">For full strategic context, refer to the comprehensive report and executive summary documents.</p>
+        </div>
